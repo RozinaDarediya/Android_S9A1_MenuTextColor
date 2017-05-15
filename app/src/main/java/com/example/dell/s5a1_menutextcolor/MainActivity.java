@@ -6,6 +6,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+
+/**
+ *Implemented options menu having option "TEXT COLOR" and its sub menu of at least
+ 3 colors. On click of each color should change the activity TextView color
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
@@ -17,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.text);
     }
+
+    /**
+     *option menu is taken and onCreateOptionsMenu options are created
+     * on onOptionsItemSelected the according task will be performed and the color of the text will be changed
+     */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
